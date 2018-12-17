@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import ShelfSelector from './ShelfSelector';
+import noImage from '../img/no-image.png';
 
 class Book extends Component {
     static propTypes = {
@@ -11,8 +12,13 @@ class Book extends Component {
 
     render() {
         const { book, allBooks, moveToShelf } = this.props,
-            bookCover = book.imageLinks && book.imageLinks.thumbnail ? book.imageLinks.thumbnail : '',
             bookTitle = book.title ? book.title : '';
+        let bookCover = null;
+            if (book.imageLinks && book.imageLinks.thumbnail) {
+                bookCover = book.imageLinks.thumbnail;
+            } else if (!book.imageLinks || book.imageLinks.thumbnail.length < 1) {
+                bookCover = noImage;
+            }
 
         return (
             <li>

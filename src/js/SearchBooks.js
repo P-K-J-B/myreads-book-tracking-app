@@ -47,7 +47,7 @@ class SearchBooks extends Component {
                 <div className="search-books-results">
                     {this.state.searchResults.length > 0 && this.state.noneFound === false && (
                         <ol className="books-grid">
-                            {this.state.searchResults.map(item => (
+                            {this.state.searchResults.map(item => ( 
                                 <Book
                                     book={item}
                                     key={item.id}
