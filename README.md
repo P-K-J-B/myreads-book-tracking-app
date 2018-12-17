@@ -8,8 +8,8 @@ This app requires node package manager in order to funciton, if you do not have 
 
 With node package manager installed:
 1. Open a terminal and navigate to a folder of your choice
-2. Clone this repository into the chosen directory using: git clone https://github.com/P-K-J-B/myreads-book-tracking-app
-3. Navigate to the Submission folder via the terminal
+2. Clone this repository into the chosen directory using: 'git clone https://github.com/P-K-J-B/myreads-book-tracking-app'
+3. Navigate to the 'myreads-book-tracking-app' folder via the terminal
 4. Run: npm install
 5. Run: npm start
 
